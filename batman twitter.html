@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN - TWITTER</title>
+</head>
+<body>
+    <p class="hover-me">Hover me!</p>
+    <div class="batman">
+        <div class="cover1">
+            <div class="cover2">
+            </div>
+            <div class="cover3"></div>
+            <div class="cover4"></div>
+        </div>
+        <div class="head1">
+            <div class="head2"></div>
+        </div>
+        <div class="mouth"></div>
+        <div class="ear1"></div>
+        <div class="ear2"></div>
+        <div class="eye"></div>
+    </div>
+    <a href="https://twitter.com/ayush__007"
+    class="author">Ayush Saxena</a>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fffaf0;
+        }
+        .batman{
+            width: 250px;
+            height: 300px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -125px;
+            margin-top: -150px;
+            transform: rotate(0deg);
+            transition: transform 300ms ease;
+            overflow: hidden;
+        }
+        .batman:hover{
+            transform: rotate(100deg);
+        }
+        .batman:hover .head1{
+            background-color: #28a9e1;
+        }
+        .batman:hover .head2{
+            background-color: #28a9e1;
+        }
+        .batman:hover .cover1{
+            box-shadow: 60px 85px 0 -50px #28a9e1;
+        }
+        .batman:hover .cover2{
+            box-shadow: 60px 85px 0 -50px #28a9e1;
+        }
+        .batman:hover .cover3{
+            box-shadow: 60px 85px 0 -50px #28a9e1;
+        }
+        .batman:hover .cover4{
+            box-shadow: 60px 85px 0 -50px #28a9e1;
+        }
+        .batman:hover .mouth{
+            border-top: 1px solid #28a9e1;
+            border-right: 1px solid #28a9e1;
+        }
+        .batman:hover .ear1{
+            box-shadow: 60px 85px 0 -50px #28a9e1;
+        }
+        .batman:hover .ear2{
+            box-shadow: 60px 85px 0 -50px #28a9e1;
+        }
+        .batman:hover .eye{
+            background-color: #28a9e1;
+        }
+        .cover1{
+            width: 300px;
+            height: 300px;
+            border-radius: 90%;
+            box-shadow: 60px 85px 0 -50px #1c1c1c;
+            transform: rotate(-30deg);
+            position: absolute;
+            top: -50px;
+            left: -200px;
+            z-index: 2;
+        }
+        .cover2{
+            width: 300px;
+            height: 300px;
+            border-radius: 90%;
+            box-shadow: 60px 85px 0 -50px #1c1c1c;
+            transform: rotate(-30deg);
+            position: absolute;
+            top: 70px;
+            left: -20px;
+        }
+        .cover3{
+            width: 300px;
+            height: 300px;
+            border-radius: 90%;
+            box-shadow: 60px 85px 0 -50px #1c1c1c;
+            transform: rotate(-30deg);
+            position: absolute;
+            top: 85px;
+            left: 25px;
+        }
+        .cover4{
+            width: 390px;
+            height: 350px;
+            border-radius: 90%;
+            box-shadow: 60px 85px 0 -50px #1c1c1c;
+            transform: rotate(-60deg);
+            position: absolute;
+            top: 150px;
+            left: -50px;
+        }
+        .head1{
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color: #1c1c1c;
+            border-radius: 50%;
+            position: absolute;
+            left: 25px;
+            top: 62px;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .head2{
+            width: 150px;
+            height: 60px;
+            background-color: #cdbaa3;
+            border-radius: 100px / 50px;
+            position: absolute;
+            left: -55px;
+            transform: rotate(-45deg);
+            top: 85px;
+            overflow: hidden;
+        }
+        .mouth{
+            width: 10px;
+            height: 2px;
+            display: block;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            border-top-right-radius: 10px;
+            top: 150px;
+            left: 48px;
+            transform: rotate(-55deg);
+            position: absolute;
+            z-index: 3;
+        }
+        .ear1{
+            width: 150px;
+            height: 250px;
+            border-radius: 90%;
+            box-shadow: 60px 85px 0 -50px #1c1c1c;
+            transform: rotate(-30deg);
+            position: absolute;
+            top: -75px;
+            left: -130px;
+        }
+        .ear2{
+            width: 150px;
+            height: 250px;
+            border-radius: 90%;
+            box-shadow: 60px 85px 0 -50px #1c1c1c;
+            transform: rotate(-30deg);
+            position: absolute;
+            top: -85px;
+            left: -111px;
+        }
+        .eye{
+            height: 4px;
+            width: 8px;
+            background-color: #ffffff;
+            display: block;
+            margin-top: 120px;
+            left: 35px;
+            position: absolute;
+            border-radius: 0px 0px 10px 10px;
+            z-index: 3;
+            transform: rotate(-40deg);
+        }
+        .hover-me{
+            font-size: 22px;
+            text-align: center;
+            animation-name: blink;
+            animation-duration: 700ms;
+            animation-iteration-count: infinite;
+            position: fixed;
+            top: 15px;
+            width: 100%;
+        }
+        .author{
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            color: #1c1c1c;
+        }
+        @keyframes blink{
+            0%{
+                color: #1c1c1c;
+                transform: scale(1);
+            }
+            50%{
+                color: #28a9e1;
+                transform: scale(1.2);
+            }
+            100%{
+                color: #28a9e1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</body>
+</html>
